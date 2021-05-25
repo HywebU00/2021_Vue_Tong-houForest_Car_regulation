@@ -176,9 +176,9 @@ export default {
   <div class="wrapper">
     <Header/>
         <div id="center" class="main">
-       <router-view/>
-        <Footer/>
-    </div>
+          <router-view/>
+          <Footer/>
+        </div>
     <a href="javascript:;" class="scrollToTop">回頁首</a>
   
   </div>

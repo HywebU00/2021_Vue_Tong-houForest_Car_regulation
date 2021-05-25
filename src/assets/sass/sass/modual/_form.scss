@@ -21,37 +21,6 @@ $form_title_width: 150px; // 表單title寬度
   // }
 }
 
-// %mix-col {
-//     align-items: flex-start;
-//     @include gutter(0);
-
-//     .form_title {
-//         max-width: calc(100% - .6em);
-//         flex-basis: calc(100% - .6em);
-//         @include gutter(0);
-//         margin: 0 .3em .5em;
-//     }
-
-//     // >input {
-//     //     flex: 1 1 auto;
-//     // }
-
-//     .form_grp {
-//         border-bottom: 0;
-//         align-items: center;
-
-//         @include screen('xs_mobile') {
-//             flex-basis: 100%;
-//         }
-//         .form_content{
-//             flex-basis: 100%;
-//             max-width: 100%;
-//             padding:0;
-//         }
-
-//     }
-// }
-
 select::-ms-expand {
   display: none;
 }
@@ -66,7 +35,8 @@ select::-ms-expand {
   border-top: 1px solid #ddd;
 
   .form_grp {
-    border-bottom: 1px dashed #ddd;
+    border-bottom: 1px solid #f0f0f0;
+    //border-bottom: 1px dashed #ddd;
     padding: 0.5em 0;
   }
 }
@@ -312,6 +282,50 @@ select::-ms-expand {
         }
       }
     }
+    //新增
+    &.form_col-6-6 {
+      > .form_grp,
+      > input[type="text"],
+      > select {
+        flex-basis: 50%;
+        width: 50%;
+
+        @include screen("xs_mobile") {
+          flex-basis: 100%;
+          width: 100%;
+        }
+      }
+      //新增
+      > input[type="email"],
+      > select {
+        flex-basis: calc(50% - 0.6em);
+        width: 50%;
+
+        @include screen("xs_mobile") {
+          flex-basis: 100%;
+          width: 100%;
+        }
+      }
+      > input[type="tel"],
+      > select {
+        flex-basis: calc(50% - 0.6em);
+        width: 50%;
+
+        @include screen("xs_mobile") {
+          flex-basis: 100%;
+          width: 100%;
+        }
+      }
+      select {
+        flex-basis: calc(50% - 0.6em);
+        width: 50%;
+
+        @include screen("xs_mobile") {
+          flex-basis: 100%;
+          width: 100%;
+        }
+      }
+    }
 
     &.form_col-3-3-6 {
       > .form_grp,
@@ -323,6 +337,36 @@ select::-ms-expand {
           flex-basis: 50%;
         }
       }
+
+      > .form_grp,
+      > input[type="text"],
+      > select {
+        &:last-child {
+          flex-basis: 50%;
+
+          @include screen("xs_mobile") {
+            flex-basis: 100%;
+          }
+        }
+      }
+    }
+    //新增
+    &.form_col-3-5-4 {
+      > .form_grp,
+      > input[type="tel"],
+      > select {
+        flex-basis: calc(15% - 0.6em);
+        &:nth-child(2) {
+          flex-basis: calc(35% - 0.6em);
+        }
+        &:last-child {
+          flex-basis: calc(90% - (65% + 1.2em));
+        }
+        @include screen("xs_mobile") {
+          flex-basis: 50%;
+        }
+      }
+      //新增
 
       > .form_grp,
       > input[type="text"],
@@ -381,6 +425,37 @@ select::-ms-expand {
           @include screen("xs_mobile") {
             flex-basis: 100%;
           }
+        }
+      }
+    }
+    //新增
+    &.form_col-8-4 {
+      > .form_grp,
+      > input[type="text"],
+      > select {
+        flex-basis: calc(100% / 3 * 2 - 0.6em);
+        @include screen("xs_mobile") {
+          flex-basis: 50%;
+        }
+      }
+      > input[type="email"],
+      > select {
+        flex-basis: calc(100% / 3 * 2 - 0.6em);
+        @include screen("xs_mobile") {
+          flex-basis: 50%;
+        }
+      }
+      > input[type="tel"],
+      > select {
+        flex-basis: calc(100% / 3 * 2 - 0.6em);
+        @include screen("xs_mobile") {
+          flex-basis: 50%;
+        }
+      }
+      select {
+        flex-basis: calc(100% / 3 * 2 - 0.6em);
+        @include screen("xs_mobile") {
+          flex-basis: 50%;
         }
       }
     }
@@ -973,7 +1048,8 @@ select::-ms-expand {
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
-    padding: 0.3em 0;
+    padding: 1em 0;
+    // padding: 0.3em 0;
 
     @include screen("mobile") {
       flex-wrap: wrap;
@@ -1330,8 +1406,8 @@ input[type="checkbox"]:checked,
 input[type="checkbox"]:focus,
 input[type="radio"]:checked,
 input[type="radio"]:focus {
-  border-color: $form-focus;
-  background-color: $form-focus;
+  border-color: $color-dark; //$form-focus;
+  background-color: $color-dark; //$form-focus;
   outline: none;
 }
 
@@ -1345,7 +1421,8 @@ input[type="checkbox"]:checked {
 }
 
 input[type="radio"]:checked {
-  box-shadow: #fff 0 0 0 3px inset, $form-focus 0 0 0 2px;
+  box-shadow: #fff 0 0 0 3px inset, $color-dark 0 0 0 2px;
+  // box-shadow: #fff 0 0 0 3px inset, $form-focus 0 0 0 2px;
 }
 
 input[type="radio"]:focus {
