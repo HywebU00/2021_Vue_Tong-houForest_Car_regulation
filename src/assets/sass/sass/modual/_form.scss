@@ -1354,7 +1354,7 @@ input[type="email"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid lighten($form-focus, 20);
+  border: 2px solid lighten($form-focus, 20);
   //@include box-shadow(0px 0px 0px 2px lighten($form-focus, 20));
   outline: none;
 }

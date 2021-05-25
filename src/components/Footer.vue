@@ -11,10 +11,10 @@ export default {
             >:::</a>
             <div class="footer_icon">
                 <a target="_blank" href="javascript:;" title="另開視窗">
-                    <img src="images/basic/accessibility.jpg" alt="" />
+                    <img src="~@/assets/images/basic/accessibility.png" alt="" />
                 </a>
                 <a target="_blank" href="javascript:;" title="另開視窗">
-                    <img src="images/basic/egov.png" alt="" />
+                    <img src="~@/assets/images/basic/egov.png" alt="" />
                 </a>
             </div>
             <div class="footer_info">

@@ -121,6 +121,9 @@ footer {
           z-index: 99;
         }
       }
+      &:last-child {
+        margin-left: 0.5em;
+      }
     }
     img {
       max-width: 120px;

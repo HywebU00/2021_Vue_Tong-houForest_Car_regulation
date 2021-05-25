@@ -95,8 +95,7 @@ export default {
                   <div class="form_title">車牌號碼 :</div>
                   <div class="form_content form_col-6-6 form_inline">
                       <label for="inputSample" class="label_hidden">雙欄1</label>
-                      <input name="username" id="inputSample" type="text">
-                      <span>例如: ABC-123</span>
+                      <input name="username" id="inputSample" type="text"><span>例如: ABC-123</span>
                   </div>
                 </div>
                 <div class="form_grp last-input">
