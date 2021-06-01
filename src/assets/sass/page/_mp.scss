@@ -70,7 +70,7 @@ a.more {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5em;
+  margin-top: 3em;
   color: $color-dark;
   padding: 0 5%;
   &::before {
@@ -131,4 +131,10 @@ a.more {
   @media (max-width: 560px) {
     padding-top: 0;
   }
+}
+.tabItem {
+  height: 60px;
+}
+.active + .tabContent {
+  top: 60px;
 }
