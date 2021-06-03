@@ -24,11 +24,13 @@ export default {
             </nav>    
             <!-- navigation End -->
             <div class="">
-                  <a href="#                  "
+                 <h1>
+                      <a href="#                  "
                     ><img
                     src="~@/assets/images/img/logo.png"
                     alt="110年桶后林道車輛進入線上申辦系統建置案"
                 /></a>
+                 </h1>
             </div>
             <div class="subtitle">
                 <p>
