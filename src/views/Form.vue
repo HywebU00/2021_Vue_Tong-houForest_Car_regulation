@@ -6,7 +6,6 @@ export default {
 
 <template>
   <section class="col-12">
-     <h1>h1測試2</h1>
           <div class="container application_content">
             <div class="form_title">
               <h2 class=""><span>/</span>申請表<span>/</span></h2>
