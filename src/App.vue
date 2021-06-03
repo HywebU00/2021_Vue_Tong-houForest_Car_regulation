@@ -118,11 +118,11 @@ export default {
   <div class="wrapper">
     <Header/>
         <div id="center" class="main">
+          <h1>h1測試</h1>
           <router-view/>
           <Footer/>
         </div>
     <a href="javascript:;" class="scrollToTop">回頁首</a>
-  
   </div>
 
 </template>
