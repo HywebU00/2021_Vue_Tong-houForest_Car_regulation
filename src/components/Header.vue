@@ -26,7 +26,7 @@ export default {
             <div class="">
                  <h1>
                       <a href="#                  "
-                    ><img
+                    >測試測試<img
                     src="~@/assets/images/img/logo.png"
                     alt="110年桶后林道車輛進入線上申辦系統建置案"
                 /></a>
@@ -53,5 +53,7 @@ export default {
       <!-- header End -->
 </template>
 <style>
-
+h1{
+    font-size: 0;
+}
 </style>
