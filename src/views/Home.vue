@@ -40,10 +40,10 @@ export default {
                 </div>
             </div>
             <div class="form_text">
-                <p>申請洽詢專線及網址：<br>
+                <span>申請洽詢專線及網址：<br>
                     林務局新竹林區管理處育樂課　<br>
                     電話 (03)528-6629　傳真 (03)521-5454<br>
-                    地址：300 新竹市中山路2號</p>
+                    地址：300 新竹市中山路2號</span>
             </div>
             <div class="form_submit">
               <router-link to="/form"><button class="btn btn-submit">開始申請</button></router-link>
