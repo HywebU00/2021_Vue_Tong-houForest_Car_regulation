@@ -79,7 +79,10 @@
     text-align: left;
     color: #fff;
 
-    @include screen("mobile") {
+    // @include screen("mobile") {
+    //   @include text-overflow();
+    // }
+    @media (max-width: 768px) {
       @include text-overflow();
     }
     a {
