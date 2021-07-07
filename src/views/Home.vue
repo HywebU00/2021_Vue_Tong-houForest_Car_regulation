@@ -81,6 +81,7 @@ export default {
           <router-link to="/form"
             ><button class="btn btn-submit">開始申請</button></router-link
           >
+          <button class="btn btn-secondary">查詢結果</button>
         </div>
       </form>
     </div>
